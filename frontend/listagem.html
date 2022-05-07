@@ -3,35 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style.css">
-    <script src="./scriptget.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/scriptget.js" defer></script>
     <title>Listagem</title>
 </head>
-<body>
-    <header>
-        <nav>
-            <ul class="menu">
-                <li><a href="./inicio.html">Inicio</a></li>
-                <li><a href="./cadastro.html">Cadastro</a></li>
-                <li><a href="./listagem.html">Listagem</a></li>
-                <li><a href="./sobre.html">Sobre</a></li>
-                <li><a href="#"><img src="./icons/github.png"></a></li>
-
-            </ul>
-        </nav>
-    </header>
-
-    <div class="listagem">
-        <div class="cabecalho">
-            <h1>Listagem de Cadastros</h1>
-            <button>Clique aqui para recarregar</button>
-            <table id="tabela"></table>
+<body id="listagem">
+    <div>
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">inicio</a></li>
+                    <li><a href="cadastro.html">cadastro</a></li>
+                </ul>
+                <div class="clear"></div>
+            </nav>
+        </header>
+        <div class="clear"></div>
+        <div class="listagem">
+            <div class="cabecalho">
+                <h2 class="titulo-segundo">listagem de cadastro</h2>
+                <button class="btn-listagem">Clique aqui para recarregar</button>
+                <table id="tabela"></table>
+            </div>        
         </div>
-        
-        
-
-        
     </div>
     
 </body>

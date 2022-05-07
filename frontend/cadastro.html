@@ -3,36 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style.css">
-    <script src="./script.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/2c35c6b404.js" crossorigin="anonymous"></script>
     <title>Cadastro de pessoas</title>
 </head>
 <body>
     <header>
         <nav>
             <ul class="menu">
-                <li><a href="./inicio.html">Inicio</a></li>
-                <li><a href="./cadastro.html">Cadastro</a></li>
-                <li><a href="./listagem.html">Listagem</a></li>
-                <li><a href="./sobre.html">Sobre</a></li>
-                <li><a href="https://github.com/viniciusribeiroads/app-cadastro-pessoas" target="_blank"><img src="./icons/github.png"></a></li>
-
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="listagem.html">consulta</a></li>
             </ul>
+            <div class="clear"></div>
         </nav>
     </header>
+    <div class="clear"></div>
 
-    <div class="box">
-        <h1>CADASTRO</h1>
-        <form action="">
-            <input type="text" class="nome" name="nome" placeholder="Nome">
-            <input type="text" class="username" name="username" placeholder="Username">
-            <input type="email" class="email" name="email" placeholder="Email">
-            <input type="password" class="senha"senha name="senha" placeholder="Senha">
-            <input type="text" class="tel" name="tel" placeholder="Telefone">
-            <button>Cadastrar</button>
+    <div class="caixa">
+        <h2 class="titulo-segundo">cadastro</h2>
+        <form>
+            <label class="label-icones"><i class="fa-solid fa-user"></i>
+                <input type="text" class="nome" name="nome" placeholder="Nome" required>
+            </label>
+
+            <label class="label-icones"><i class="fa-solid fa-user"></i>
+                <input type="text" class="username" name="usuário" placeholder="Username" required>
+            </label>
+
+            <label class="label-icones"><i class="fa-solid fa-envelope"></i>
+                <input type="email" class="email" name="email" placeholder="Email" required>
+            </label>
+
+            <label class="label-icones"><i class="fa-solid fa-phone"></i>
+                <input type="text" class="tel" name="tel" placeholder="Telefone" required>
+            </label>
+
+            <label class="label-icones"><i class="fa-solid fa-key"></i>
+                <input type="password" class="senha"senha name="senha" placeholder="Senha" required>
+            </label>
+
+            <button class="btn-cadastro">cadastrar</button>
         </form>
-    </div>
-    
+    </div>    
 </body>
 </html>
